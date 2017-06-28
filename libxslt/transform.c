@@ -4959,8 +4959,8 @@ xsltApplyTemplates(xsltTransformContextPtr ctxt, xmlNodePtr node,
 	    cur = NULL;
 	while (cur != NULL) {
 	    switch (cur->type) {
-#if 0 // Space stripping handled at document load
 		case XML_TEXT_NODE:
+#if 0 // Space stripping handled at document load
 		    if ((IS_BLANK_NODE(cur)) &&
 			(xsltFindElemSpaceHandling(ctxt, cur->parent))) {
 			delNode = cur;
